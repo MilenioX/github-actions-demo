@@ -9,8 +9,8 @@
   },
   "scripts": {
     "build": "export NODE_OPTIONS=--openssl-legacy-provider && npx webpack --config ./src/webpack.config.js --mode production",
-    "dev": "export NODE_OPTIONS=--openssl-legacy-provider && npx webpack --config ./src/webpack.config.js --mode development --watch",
-    "test": "export NODE_OPTIONS=--openssl-legacy-provider && npx standard && npx jest"
+    "dev": "npx webpack --config ./src/webpack.config.js --mode development --watch",
+    "test": "npx standard && npx jest"
   },
   "author": "githubtraining",
   "license": "MIT",
